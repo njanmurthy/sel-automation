@@ -14,7 +14,6 @@ public class baseWebdriver extends extentReport {
 	
 	public static WebDriver driver;
 	public Properties propFile;
-	
 	public WebDriver initializeDriver() throws IOException {
 		propFile = new Properties();
 		FileInputStream fs = new FileInputStream(System.getProperty("user.dir") + "\\data.properties");

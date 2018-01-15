@@ -10,7 +10,7 @@ public class extentReport {
 	public static ExtentTest test;
 	public static ExtentHtmlReporter htmlReporter;
 //	public static String filePath = "./extentreport.html";
-	public static String filePath = System.getProperty("user.dir")+"\\test-output\\REPORT.html";
+	public static String filePath = System.getProperty("user.dir")+"\\REPORT.html";
 //	public static String filePath = "C:\\Users\\niranjana.shivakumar\\Desktop\\extentreport.html";
 	
 	public static ExtentReports GetExtent(){
