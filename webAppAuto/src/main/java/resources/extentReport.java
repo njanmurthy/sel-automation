@@ -25,10 +25,11 @@ public class extentReport {
 	
         htmlReporter = new ExtentHtmlReporter(filePath);
 	// make the charts visible on report open
-        htmlReporter.config().setChartVisibilityOnOpen(true);
-		
-        htmlReporter.config().setDocumentTitle("QAV automation report");
-        htmlReporter.config().setReportName("Regression cycle");
+//        htmlReporter.config().setChartVisibilityOnOpen(true);
+//		
+//        htmlReporter.config().setDocumentTitle("QAV automation report");
+//        htmlReporter.config().setReportName("Regression cycle");
+        htmlReporter.loadXMLConfig("./extentreport-config.xml");
         return htmlReporter;
 	}
 	

@@ -2,6 +2,8 @@ package demo;
 
 import java.io.IOException;
 
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -21,4 +23,14 @@ public class superTestNG extends baseWebdriver {
 		driver.close();
 		driver = null;
 	}
+	
+	@AfterMethod
+	public void getResult(ITestResult result)
+    {
+        if(result.getStatus()==ITestResult.FAILURE)
+        {
+            test.fail( result.getThrowable());
+             
+        }
+    }
 }
