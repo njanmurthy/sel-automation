@@ -19,4 +19,10 @@
       <class name="demo.demoAutomationHeadingTest"/>
     </classes>
   </test> <!-- Test -->
+  <test thread-count="5" name="loginTest">
+    <classes>
+      <class name="demo.demoLoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

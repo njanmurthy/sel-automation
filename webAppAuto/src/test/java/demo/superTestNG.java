@@ -7,7 +7,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
-import resources.baseWebdriver;
+import resources.*;
 
 public class superTestNG extends baseWebdriver {
 	

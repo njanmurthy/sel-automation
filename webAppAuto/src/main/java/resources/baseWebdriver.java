@@ -12,11 +12,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import demo.excelApi;
 
 public class baseWebdriver extends extentReport {
 	
 	public static WebDriver driver;
-	public Properties propFile;
+	public static Properties propFile;
+	public excelApi xlApi = null;
+	
 	public WebDriver initializeDriver() throws IOException {
 		propFile = new Properties();
 		FileInputStream fs = new FileInputStream(System.getProperty("user.dir") + "\\data.properties");
